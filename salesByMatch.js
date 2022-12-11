@@ -14,5 +14,4 @@ function sockMerchant(n, ar) {
 
     return counter;
 }
-
 //https://www.hackerrank.com/challenges/sock-merchant/problem
