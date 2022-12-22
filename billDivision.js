@@ -8,10 +8,10 @@ function bonAppetit(bill, k, b) {
     const differenceValue = shePaid - anaHasToPay;
 
     if (differenceValue < 1) {
-       return console.log('Bon Appetit')
+       return 'Bon Appetit'
     }
 
-    return console.log(differenceValue)
+    return differenceValue
 
 }
 
