@@ -11,4 +11,3 @@ function pangrams(s) {
     return 'pangram'
 }
 //https://www.hackerrank.com/challenges/pangrams
-// Pangrams
