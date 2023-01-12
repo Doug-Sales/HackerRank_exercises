@@ -4,4 +4,3 @@ function beautifulBinaryString(b) {
 }
 //https://www.hackerrank.com/challenges/beautiful-binary-string
 // Big-O: temporal O(n), espacial O(1);
-//Beautiful Binary String
