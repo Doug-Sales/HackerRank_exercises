@@ -14,3 +14,4 @@ function runningTime(arr) {
     return swapCounter
 }
 //https://www.hackerrank.com/challenges/runningtime/
+// Big-O: O(n²)
