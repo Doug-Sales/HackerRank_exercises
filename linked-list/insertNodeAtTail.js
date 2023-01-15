@@ -1,5 +1,4 @@
 function insertNodeAtTail(head, data) {
-    let newList = new SinglyLinkedListNode()
     
     if (head === null) {
         head = new SinglyLinkedListNode(data);
