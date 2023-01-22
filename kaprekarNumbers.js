@@ -16,4 +16,4 @@ function kaprekarNumbers(p, q) {
     console.log(answer.join(' ') || 'INVALID RANGE')
 }
 //https://www.hackerrank.com/challenges/kaprekar-numbers
-//Big-O: O(n)
+//Big-O: O(n) 
