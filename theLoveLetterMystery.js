@@ -1,19 +1,14 @@
 function theLoveLetterMystery(s) {
-    const word = s,
-        codeLetter = word.split('').map(letter => letter.charCodeAt()),
-        mid = word.length % 2 === 0 ? word.length / 2 : Math.round(word.length / 2);
+    const mid = Math.floor(s.length / 2);
+    const iterations = s.length % 2 === 0 ? mid : mid + 1;
     let sumOperations = 0;
 
-    if (word.length % 2 !== 0) {
-        for (let i = 0, j = -1; i < mid - 1; i++ , j--) {
-            sumOperations += Math.abs(codeLetter.at(i) - codeLetter.at(j))
-        }
-        return sumOperations;
+    for (let i = 0, j = s.length - 1; i < iterations; i++, j--) {
+        const charCodeI = s.charCodeAt(i);
+        const charCodeJ = s.charCodeAt(j);
+        sumOperations += Math.abs(charCodeI - charCodeJ);
     }
 
-    for (let i = 0, j = -1; i < mid; i++ , j--) {
-        sumOperations += Math.abs(codeLetter.at(i) - codeLetter.at(j))
-    }
-    return sumOperations
+    return sumOperations;
 }
 //https://www.hackerrank.com/challenges/the-love-letter-mystery
